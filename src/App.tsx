@@ -110,42 +110,42 @@ export default function App() {
         {/* =========================================================================
             HERO SECTION
             ========================================================================= */}
-        <section className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-8 items-start mb-16 sm:mb-20">
+        <section className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-8 items-center lg:items-start mb-14 sm:mb-16 lg:mb-20">
           {/* Left Column (7 cols) */}
-          <div className="lg:col-span-7 flex flex-col items-start pr-0 lg:pr-4">
+          <div className="lg:col-span-7 flex flex-col items-start pr-0 lg:pr-4 w-full">
             {/* Availability Pill */}
-            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 bg-white/80 backdrop-blur border border-slate-200/70 shadow-sm rounded-full mb-6">
-              <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
-              <span className="text-[13px] font-medium text-slate-700">
+            <div className="inline-flex items-center gap-2 px-3 sm:px-3.5 py-1 sm:py-1.5 bg-white/80 backdrop-blur border border-slate-200/70 shadow-sm rounded-full mb-4 sm:mb-6 max-w-full">
+              <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse shrink-0"></span>
+              <span className="text-xs sm:text-[13px] font-medium text-slate-700 truncate">
                 Available for remote work · Colombia
               </span>
             </div>
 
             {/* Eyebrow */}
-            <div className="text-[12px] font-bold tracking-[0.12em] text-[#2563EB] uppercase mb-4">
+            <div className="text-[11px] sm:text-[12px] font-bold tracking-[0.12em] text-[#2563EB] uppercase mb-3 sm:mb-4">
               FRONT-END CRAFT · FULL-STACK THINKING
             </div>
 
-            {/* Main Title - Large Sizing matching Screenshot */}
-            <h1 className="text-5xl sm:text-6xl lg:text-[76px] font-bold text-[#0F172A] tracking-[-0.035em] leading-[0.98] mb-6">
-              Building digital<br />
-              products that <br />
-              feel {' '}
+            {/* Main Title - Fluid Scaling for Mobile & Desktop */}
+            <h1 className="text-[40px] leading-[1.04] sm:text-5xl md:text-6xl lg:text-[72px] xl:text-[76px] font-bold text-[#0F172A] tracking-[-0.035em] lg:leading-[0.98] mb-5 sm:mb-6 max-w-2xl">
+              Building digital<br className="hidden sm:inline" />{' '}
+              products that<br className="hidden sm:inline" />{' '}
+              feel{' '}
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#2563EB] via-[#4F46E5] to-[#9333EA]">
                 effortless.
               </span>
             </h1>
 
             {/* Subtitle */}
-            <p className="text-slate-600 text-[16px] sm:text-[17px] leading-[1.65] max-w-[500px] mb-8">
+            <p className="text-slate-600 text-[15px] sm:text-[16px] lg:text-[17px] leading-[1.6] sm:leading-[1.65] max-w-[500px] mb-6 sm:mb-8">
               I'm Vanessa, a front-end-focused full-stack developer who turns complex ideas into clean, thoughtful experiences for teams around the world.
             </p>
 
             {/* CTAs */}
-            <div className="flex flex-wrap items-center gap-3 mb-10">
+            <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 mb-8 sm:mb-10 w-full sm:w-auto">
               <a
                 href="#work"
-                className="bg-blue-600 hover:bg-blue-700 text-white text-xs sm:text-sm font-semibold px-5 py-3 rounded-full inline-flex items-center gap-2 shadow-sm transition-all hover:translate-y-[-1px]"
+                className="bg-blue-600 hover:bg-blue-700 text-white text-xs sm:text-sm font-semibold px-5 py-3 rounded-full inline-flex items-center justify-center gap-2 shadow-sm transition-all hover:translate-y-[-1px] text-center"
               >
                 <span>View selected work</span>
                 <ArrowRight className="w-4 h-4" />
@@ -155,7 +155,7 @@ export default function App() {
                 href="https://www.linkedin.com/in/vanpacheco08/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-white/90 hover:bg-white text-slate-900 text-xs sm:text-sm font-semibold px-5 py-3 rounded-full inline-flex items-center gap-1.5 border border-slate-200/80 shadow-sm transition-all hover:translate-y-[-1px]"
+                className="bg-white/90 hover:bg-white text-slate-900 text-xs sm:text-sm font-semibold px-5 py-3 rounded-full inline-flex items-center justify-center gap-1.5 border border-slate-200/80 shadow-sm transition-all hover:translate-y-[-1px] text-center"
               >
                 <span>LinkedIn</span>
                 <ArrowUpRight className="w-3.5 h-3.5 text-slate-600" />
@@ -163,23 +163,23 @@ export default function App() {
             </div>
 
             {/* Metrics Highlights Row */}
-            <div className="flex flex-wrap items-center gap-3 sm:gap-4 text-xs text-slate-600 pt-2 border-t border-slate-300/40 w-full">
-              <div>
+            <div className="flex flex-wrap items-center gap-3 sm:gap-4 text-xs text-slate-600 pt-3 border-t border-slate-300/40 w-full">
+              <div className="shrink-0">
                 <span className="font-bold text-slate-900 text-sm">9+</span> years of experience
               </div>
-              <div className="w-1 h-1 rounded-full bg-slate-400"></div>
-              <div>
+              <div className="w-1 h-1 rounded-full bg-slate-400 shrink-0"></div>
+              <div className="shrink-0">
                 <span className="font-bold text-slate-900 text-sm">ES / EN</span> bilingual
               </div>
             </div>
           </div>
 
           {/* Right Column (5 cols) - Visual Hero Artwork Card */}
-          <div className="lg:col-span-5 flex justify-center lg:justify-end">
-            <div className="w-full max-w-[360px] flex flex-col">
+          <div className="lg:col-span-5 flex justify-center lg:justify-end w-full mt-4 lg:mt-0">
+            <div className="w-full max-w-[290px] sm:max-w-[330px] lg:max-w-[360px] flex flex-col">
               {/* Glass Card with Profile Image */}
-              <div className="w-full aspect-[4/4.9] rounded-[32px] bg-gradient-to-b from-[#dcebfa]/90 via-[#e2edfa]/80 to-[#eddcf8]/80 border border-white/90 shadow-[0_20px_50px_rgba(99,102,241,0.14)] p-3 relative overflow-hidden backdrop-blur-md flex flex-col justify-between items-center text-center group">
-                <div className="w-full h-full rounded-[24px] overflow-hidden shadow-inner bg-slate-100 relative">
+              <div className="w-full aspect-[4/4.8] sm:aspect-[4/4.9] rounded-[28px] sm:rounded-[32px] bg-gradient-to-b from-[#dcebfa]/90 via-[#e2edfa]/80 to-[#eddcf8]/80 border border-white/90 shadow-[0_20px_50px_rgba(99,102,241,0.14)] p-2.5 sm:p-3 relative overflow-hidden backdrop-blur-md flex flex-col justify-between items-center text-center group">
+                <div className="w-full h-full rounded-[22px] sm:rounded-[24px] overflow-hidden shadow-inner bg-slate-100 relative">
                   <img
                     src={profileImg}
                     alt="Vanessa Pacheco"
@@ -199,10 +199,10 @@ export default function App() {
               </div>
 
               {/* Card Footer Underneath */}
-              <div className="flex items-center justify-between mt-3.5 px-1">
+              <div className="flex items-center justify-between mt-3 sm:mt-3.5 px-1">
                 <div>
-                  <div className="font-bold text-[14px] text-slate-900">Vanessa Pacheco</div>
-                  <div className="text-[12px] text-slate-500 mt-0.5">Frontend-focused Full-stack Dev</div>
+                  <div className="font-bold text-[13px] sm:text-[14px] text-slate-900">Vanessa Pacheco</div>
+                  <div className="text-[11px] sm:text-[12px] text-slate-500 mt-0.5">Frontend-focused Full-stack Dev</div>
                 </div>
 
                 {/* <div className="bg-[#DCFCE7] text-[#15803D] border border-[#86EFAC]/60 text-[11px] font-semibold px-3 py-1 rounded-full inline-flex items-center gap-1">
