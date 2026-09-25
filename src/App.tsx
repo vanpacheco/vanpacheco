@@ -14,6 +14,7 @@ import {
 import eddieTaxImg from './assets/eddietaxplus.png';
 import truBuildImg from './assets/trubuildcg.png';
 import inbanxImg from './assets/inbanx.png';
+import profileImg from './assets/profile.jpg';
 
 export default function App() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -177,34 +178,24 @@ export default function App() {
           {/* Right Column (5 cols) - Visual Hero Artwork Card */}
           <div className="lg:col-span-5 flex justify-center lg:justify-end">
             <div className="w-full max-w-[360px] flex flex-col">
-              {/* Glass Card */}
-              <div className="w-full aspect-[4/4.9] rounded-[32px] bg-gradient-to-b from-[#dcebfa]/90 via-[#e2edfa]/80 to-[#eddcf8]/80 border border-white/90 shadow-[0_20px_50px_rgba(99,102,241,0.14)] p-6 relative overflow-hidden backdrop-blur-md flex flex-col justify-between items-center text-center group">
-                {/* Subtle Geometric Background Overlay */}
-                <div
-                  className="absolute inset-0 opacity-20 pointer-events-none"
-                  style={{
-                    backgroundImage: 'radial-gradient(#6366F1 1px, transparent 1px)',
-                    backgroundSize: '24px 24px'
-                  }}
-                ></div>
+              {/* Glass Card with Profile Image */}
+              <div className="w-full aspect-[4/4.9] rounded-[32px] bg-gradient-to-b from-[#dcebfa]/90 via-[#e2edfa]/80 to-[#eddcf8]/80 border border-white/90 shadow-[0_20px_50px_rgba(99,102,241,0.14)] p-3 relative overflow-hidden backdrop-blur-md flex flex-col justify-between items-center text-center group">
+                <div className="w-full h-full rounded-[24px] overflow-hidden shadow-inner bg-slate-100 relative">
+                  <img
+                    src={profileImg}
+                    alt="Vanessa Pacheco"
+                    className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500"
+                  />
+                  {/* Subtle Gradient vignette for badge readability */}
+                  <div className="absolute inset-0 bg-gradient-to-t from-slate-950/40 via-transparent to-transparent pointer-events-none"></div>
 
-                <div className="w-full flex justify-end">
-                  <div className="w-2.5 h-2.5 rounded-full bg-blue-400/40"></div>
-                </div>
-
-                {/* Big Glow Letter V */}
-                <div className="relative my-auto flex items-center justify-center">
-                  <div className="text-[130px] sm:text-[145px] font-black tracking-tighter text-white/95 drop-shadow-[0_16px_32px_rgba(99,102,241,0.25)] select-none transform transition-transform group-hover:scale-105 duration-500">
-                    V
-                  </div>
-                </div>
-
-                {/* Location Badge at Bottom inside Card */}
-                <div className="relative z-10 w-full">
-                  <div className="bg-white/80 backdrop-blur-sm border border-white/90 shadow-sm text-slate-800 text-[12px] font-medium px-4 py-2.5 rounded-xl inline-flex items-center gap-2 w-full justify-start">
-                    <MapPin className="w-3.5 h-3.5 text-slate-700" />
-                    <span>Pueblo Bello, Colombia</span>
-                  </div>
+                  {/* Location Badge at Bottom inside Card */}
+                  {/* <div className="absolute bottom-3 left-3 right-3 z-10">
+                    <div className="bg-white/90 backdrop-blur-md border border-white/90 shadow-sm text-slate-800 text-[12px] font-medium px-3.5 py-2 rounded-xl inline-flex items-center gap-2 w-full justify-start">
+                      <MapPin className="w-3.5 h-3.5 text-red-500" />
+                      <span>Pueblo Bello, Colombia</span>
+                    </div>
+                  </div> */}
                 </div>
               </div>
 
