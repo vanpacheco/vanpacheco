@@ -308,7 +308,7 @@ export default function App() {
                   />
                 </div>
                 <div className="text-[10px] font-bold text-blue-600 tracking-wider uppercase mb-1.5">
-                  FULL-TIME
+                  PART-TIME
                 </div>
                 <h3 className="font-bold text-base text-slate-900 mb-2">
                   inbanx
