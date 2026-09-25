@@ -9,9 +9,9 @@ import {
   Menu
 } from 'lucide-react';
 
-import eddieTaxImg from './assets/eddietaxplus.jpg';
-import truBuildImg from './assets/trubuildcg.jpg';
-import inbanxImg from './assets/inbanx.jpg';
+import eddieTaxImg from './assets/eddietaxplus.png';
+import truBuildImg from './assets/trubuildcg.png';
+import inbanxImg from './assets/inbanx.png';
 
 export default function App() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
