@@ -202,7 +202,7 @@ export default function App() {
               <div className="flex items-center justify-between mt-3.5 px-1">
                 <div>
                   <div className="font-bold text-[14px] text-slate-900">Vanessa Pacheco</div>
-                  <div className="text-[12px] text-slate-500 mt-0.5">Computer Engineer · ES / EN</div>
+                  <div className="text-[12px] text-slate-500 mt-0.5">Frontend-focused Full-stack Dev</div>
                 </div>
 
                 {/* <div className="bg-[#DCFCE7] text-[#15803D] border border-[#86EFAC]/60 text-[11px] font-semibold px-3 py-1 rounded-full inline-flex items-center gap-1">
