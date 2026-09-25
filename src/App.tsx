@@ -2,7 +2,9 @@ import { useState } from 'react';
 import {
   ArrowUpRight,
   ArrowRight,
+  ArrowDown,
   Mail,
+  MapPin,
   X,
   Check,
   Copy,
@@ -30,19 +32,19 @@ export default function App() {
           TOP NAVIGATION BAR
           ========================================================================= */}
       <header className="sticky top-0 z-40 w-full backdrop-blur-md bg-[#E2ECF7]/80 border-b border-white/40">
-        <div className="max-w-[1120px] mx-auto px-4 sm:px-6 h-16 flex items-center justify-between">
+        <div className="max-w-[1120px] mx-auto px-4 sm:px-6 h-18 py-3.5 flex items-center justify-between">
           {/* Logo & Name */}
-          <a href="#" className="flex items-center gap-2.5 group">
-            <div className="w-7 h-7 rounded bg-slate-900 text-white font-bold text-xs flex items-center justify-center tracking-tight shadow-sm group-hover:bg-blue-600 transition-colors">
+          <a href="#" className="flex items-center gap-3 group">
+            <div className="w-9 h-9 rounded-lg bg-[#0F172A] text-white font-bold text-sm flex items-center justify-center tracking-tight shadow-sm group-hover:bg-blue-600 transition-colors">
               VP
             </div>
-            <span className="font-semibold text-sm text-slate-900 tracking-tight">
+            <span className="font-semibold text-[15px] text-[#0F172A] tracking-tight">
               Vanessa Pacheco
             </span>
           </a>
 
           {/* Desktop Navigation Links */}
-          <nav className="hidden md:flex items-center gap-8 text-xs font-medium text-slate-600">
+          <nav className="hidden md:flex items-center gap-8 text-[14px] font-normal text-slate-600">
             <a href="#work" className="hover:text-slate-900 transition-colors">
               Work
             </a>
@@ -57,11 +59,11 @@ export default function App() {
           {/* Action CTA */}
           <div className="flex items-center gap-3">
             <a
-              href="mailto:nessapachecod@gmail.com"
-              className="bg-slate-900 hover:bg-slate-800 text-white text-xs font-semibold px-4 py-2 rounded-full inline-flex items-center gap-1.5 transition-all shadow-sm hover:shadow"
+              href="#contact"
+              className="bg-[#0F172A] hover:bg-slate-800 text-white text-[13px] font-medium px-5 py-2.5 rounded-full inline-flex items-center gap-2 transition-all shadow-sm hover:shadow"
             >
               <span>Get in touch</span>
-              <ArrowUpRight className="w-3.5 h-3.5" />
+              <ArrowDown className="w-3.5 h-3.5" />
             </a>
 
             {/* Mobile Menu Toggle */}
@@ -104,36 +106,38 @@ export default function App() {
       </header>
 
       {/* Main Container */}
-      <main className="max-w-[1120px] mx-auto px-4 sm:px-6 pt-10 sm:pt-14 pb-16">
+      <main className="max-w-[1120px] mx-auto px-4 sm:px-6 pt-10 sm:pt-16 pb-16">
         {/* =========================================================================
             HERO SECTION
             ========================================================================= */}
-        <section className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-center mb-16 sm:mb-20">
+        <section className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-8 items-start mb-16 sm:mb-20">
           {/* Left Column (7 cols) */}
-          <div className="lg:col-span-7 flex flex-col items-start">
+          <div className="lg:col-span-7 flex flex-col items-start pr-0 lg:pr-4">
             {/* Availability Pill */}
-            <div className="inline-flex items-center gap-2 px-3 py-1 bg-white/85 backdrop-blur border border-white/80 shadow-sm rounded-full mb-6">
+            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 bg-white/80 backdrop-blur border border-slate-200/70 shadow-sm rounded-full mb-6">
               <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
-              <span className="text-xs font-medium text-slate-700">
-                Available for remote work • Colombia
+              <span className="text-[13px] font-medium text-slate-700">
+                Available for remote work · Colombia
               </span>
             </div>
 
             {/* Eyebrow */}
-            <div className="text-[11px] font-bold tracking-wider text-blue-600 uppercase mb-3">
-              FRONT-END CRAFT • FULL-STACK THINKING
+            <div className="text-[12px] font-bold tracking-[0.12em] text-[#2563EB] uppercase mb-4">
+              FRONT-END CRAFT · FULL-STACK THINKING
             </div>
 
-            {/* Main Title */}
-            <h1 className="text-4xl sm:text-5xl lg:text-[54px] font-extrabold text-slate-950 tracking-tight leading-[1.08] mb-5">
-              Building digital products that feel{' '}
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 via-blue-500 to-indigo-600">
+            {/* Main Title - Large Sizing matching Screenshot */}
+            <h1 className="text-5xl sm:text-6xl lg:text-[76px] font-bold text-[#0F172A] tracking-[-0.035em] leading-[0.98] mb-6">
+              Building digital<br />
+              products that <br />
+              feel {' '}
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#2563EB] via-[#4F46E5] to-[#9333EA]">
                 effortless.
               </span>
             </h1>
 
             {/* Subtitle */}
-            <p className="text-slate-600 text-sm sm:text-base leading-relaxed max-w-lg mb-8">
+            <p className="text-slate-600 text-[16px] sm:text-[17px] leading-[1.65] max-w-[500px] mb-8">
               I'm Vanessa, a front-end-focused full-stack developer who turns complex ideas into clean, thoughtful experiences for teams around the world.
             </p>
 
@@ -164,10 +168,6 @@ export default function App() {
                 <span className="font-bold text-slate-900 text-sm">9+</span> years of experience
               </div>
               <div className="w-1 h-1 rounded-full bg-slate-400"></div>
-              {/* <div>
-                <span className="font-bold text-slate-900 text-sm">3</span> continents
-              </div> 
-              <div className="w-1 h-1 rounded-full bg-slate-400"></div> */}
               <div>
                 <span className="font-bold text-slate-900 text-sm">ES / EN</span> bilingual
               </div>
@@ -175,53 +175,49 @@ export default function App() {
           </div>
 
           {/* Right Column (5 cols) - Visual Hero Artwork Card */}
-          <div className="lg:col-span-5 flex justify-center">
-            <div className="w-full max-w-[340px] flex flex-col">
+          <div className="lg:col-span-5 flex justify-center lg:justify-end">
+            <div className="w-full max-w-[360px] flex flex-col">
               {/* Glass Card */}
-              <div className="w-full aspect-[4/4.8] rounded-3xl bg-gradient-to-b from-blue-100/90 via-indigo-100/60 to-purple-100/70 border border-white/90 shadow-xl p-6 relative overflow-hidden backdrop-blur-md flex flex-col justify-between items-center text-center group">
+              <div className="w-full aspect-[4/4.9] rounded-[32px] bg-gradient-to-b from-[#dcebfa]/90 via-[#e2edfa]/80 to-[#eddcf8]/80 border border-white/90 shadow-[0_20px_50px_rgba(99,102,241,0.14)] p-6 relative overflow-hidden backdrop-blur-md flex flex-col justify-between items-center text-center group">
                 {/* Subtle Geometric Background Overlay */}
                 <div
                   className="absolute inset-0 opacity-20 pointer-events-none"
                   style={{
                     backgroundImage: 'radial-gradient(#6366F1 1px, transparent 1px)',
-                    backgroundSize: '20px 20px'
+                    backgroundSize: '24px 24px'
                   }}
                 ></div>
 
                 <div className="w-full flex justify-end">
-                  <div className="w-2 h-2 rounded-full bg-blue-400/40"></div>
+                  <div className="w-2.5 h-2.5 rounded-full bg-blue-400/40"></div>
                 </div>
 
                 {/* Big Glow Letter V */}
                 <div className="relative my-auto flex items-center justify-center">
-                  <div className="text-[120px] font-black tracking-tighter text-white/90 drop-shadow-[0_12px_24px_rgba(99,102,241,0.25)] select-none transform transition-transform group-hover:scale-105 duration-500">
+                  <div className="text-[130px] sm:text-[145px] font-black tracking-tighter text-white/95 drop-shadow-[0_16px_32px_rgba(99,102,241,0.25)] select-none transform transition-transform group-hover:scale-105 duration-500">
                     V
                   </div>
                 </div>
 
-                {/* Location Badge at Bottom */}
-                {/* <div className="relative z-10 w-full flex justify-center">
-                  <div className="bg-white/90 backdrop-blur-sm border border-white/90 shadow-sm text-slate-700 text-[11px] font-semibold px-3.5 py-1.5 rounded-full inline-flex items-center gap-1.5">
-                    <MapPin className="w-3 h-3 text-red-500" />
+                {/* Location Badge at Bottom inside Card */}
+                <div className="relative z-10 w-full">
+                  <div className="bg-white/80 backdrop-blur-sm border border-white/90 shadow-sm text-slate-800 text-[12px] font-medium px-4 py-2.5 rounded-xl inline-flex items-center gap-2 w-full justify-start">
+                    <MapPin className="w-3.5 h-3.5 text-slate-700" />
                     <span>Pueblo Bello, Colombia</span>
                   </div>
-                </div> */}
+                </div>
               </div>
 
               {/* Card Footer Underneath */}
-              <div className="flex items-center justify-between mt-3 px-1">
+              <div className="flex items-center justify-between mt-3.5 px-1">
                 <div>
-                  <div className="font-bold text-xs text-slate-900">Vanessa Pacheco</div>
-                  <div className="text-[10px] text-slate-500">Software Developer</div>
+                  <div className="font-bold text-[14px] text-slate-900">Vanessa Pacheco</div>
+                  <div className="text-[12px] text-slate-500 mt-0.5">Computer Engineer · ES / EN</div>
                 </div>
 
-                <button
-                  onClick={() => setResumeModalOpen(true)}
-                  className="bg-emerald-500/10 hover:bg-emerald-500/20 text-emerald-700 border border-emerald-300/60 text-[10px] font-semibold px-2.5 py-1 rounded-full inline-flex items-center gap-1 transition-colors"
-                >
-                  <span>View Resume</span>
-                  <ArrowUpRight className="w-3 h-3" />
-                </button>
+                <div className="bg-[#DCFCE7] text-[#15803D] border border-[#86EFAC]/60 text-[11px] font-semibold px-3 py-1 rounded-full inline-flex items-center gap-1">
+                  <span>Open to work</span>
+                </div>
               </div>
             </div>
           </div>
@@ -383,7 +379,7 @@ export default function App() {
               </div>
               <div className="md:col-span-4">
                 <div className="font-bold text-slate-900">Mid-level Developer</div>
-                <div className="text-xs text-blue-600 font-medium">SCOTTI • Remote</div>
+                <div className="text-xs text-blue-600 font-medium">Celerik • Remote</div>
               </div>
               <div className="md:col-span-6 text-xs text-slate-600 leading-relaxed">
                 React and .NET development for lending, disbursement, and asset-backed finance applications.
@@ -397,7 +393,7 @@ export default function App() {
               </div>
               <div className="md:col-span-4">
                 <div className="font-bold text-slate-900">Full-stack Developer</div>
-                <div className="text-xs text-blue-600 font-medium">inbanx • Remote</div>
+                <div className="text-xs text-blue-600 font-medium">Celerik • Remote</div>
               </div>
               <div className="md:col-span-6 text-xs text-slate-600 leading-relaxed">
                 React, Tailwind CSS, and GraphQL for a US employee expense management product.
@@ -411,7 +407,7 @@ export default function App() {
               </div>
               <div className="md:col-span-4">
                 <div className="font-bold text-slate-900">Frontend Contractor</div>
-                <div className="text-xs text-blue-600 font-medium">Seymour & Rogers Inc • Remote</div>
+                <div className="text-xs text-blue-600 font-medium">NOVUS INOVA • Remote</div>
               </div>
               <div className="md:col-span-6 text-xs text-slate-600 leading-relaxed">
                 A bilingual Bluetooth sensor app and Mapbox-powered factory location software.
@@ -425,7 +421,7 @@ export default function App() {
               </div>
               <div className="md:col-span-4">
                 <div className="font-bold text-slate-900">Junior Software Developer</div>
-                <div className="text-xs text-blue-600 font-medium">CamBio Tech • Cartagena</div>
+                <div className="text-xs text-blue-600 font-medium">Condor Labs • Cartagena</div>
               </div>
               <div className="md:col-span-6 text-xs text-slate-600 leading-relaxed">
                 Health care interfaces, theme-switch component framework, and Scrum team leadership.
@@ -579,10 +575,10 @@ export default function App() {
                 <h4 className="font-bold text-slate-900 text-sm mb-2">Experience Summary</h4>
                 <ul className="list-disc pl-4 space-y-1.5">
                   <li><strong>Freelance Developer (2024—Present):</strong> Web redesigns and platform migrations.</li>
-                  <li><strong>Mid-level Developer @ SCOTTI (2024—2025):</strong> React & .NET finance applications.</li>
-                  <li><strong>Full-stack Developer @ inbanx (2021—2024):</strong> React, Tailwind CSS, GraphQL fintech product.</li>
-                  <li><strong>Frontend Contractor @ Seymour & Rogers Inc (2019—2021):</strong> Bluetooth sensors & Mapbox apps.</li>
-                  <li><strong>Junior Developer @ CamBio Tech (2017—2019):</strong> Healthcare UI systems & Scrum leadership.</li>
+                  <li><strong>Mid-level Developer @ Celerik (2024—2025):</strong> React & .NET finance applications.</li>
+                  <li><strong>Full-stack Developer @ Celerik (2021—2024):</strong> React, Tailwind CSS, GraphQL fintech product.</li>
+                  <li><strong>Frontend Contractor @ NOVUS INOVA (2019—2021):</strong> Bluetooth sensors & Mapbox apps.</li>
+                  <li><strong>Junior Developer @ Condor Labs (2017—2019):</strong> Healthcare UI systems & Scrum leadership.</li>
                 </ul>
               </div>
 
