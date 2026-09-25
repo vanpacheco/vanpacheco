@@ -1,74 +1,30 @@
-# Vanessa Pacheco — Frontend & Full-Stack Developer Portfolio
+# Hi, I'm Vanessa 👋
 
-A responsive, high-performance personal portfolio website built with **React**, **TypeScript**, **Tailwind CSS**, and **Vite**, tailored for GitHub Pages deployment.
+I'm a **Frontend-focused Full-Stack Developer** with 9+ years of experience building web applications and digital experiences.
 
-## 🚀 Live Demo & Links
-- **GitHub**: [https://github.com/vanpacheco](https://github.com/vanpacheco)
-- **LinkedIn**: [https://www.linkedin.com/in/vanpacheco08/](https://www.linkedin.com/in/vanpacheco08/)
-- **Featured Live Project (TruBuildCG)**: [https://trubuildcg.com](https://trubuildcg.com/)
+I enjoy turning ideas and designs into **clean, polished, pixel-precise interfaces**, with a strong focus on UX and attention to detail.
 
----
+### 💻 What I work with
 
-## 🛠 Tech Stack
-- **Framework**: React 18
-- **Language**: TypeScript
-- **Styling**: Tailwind CSS
-- **Bundler & Dev Server**: Vite 6
-- **Icons**: Lucide React
-- **Deployment**: GitHub Pages (Static Hosting)
+* React
+* TypeScript
+* JavaScript
+* HTML & CSS
+* Tailwind CSS
+* Node.js
+* REST APIs
+* SQL
 
----
+### 🤖 AI-assisted development
 
-## 💻 Local Development
+I use AI tools as part of my development workflow to explore ideas, iterate faster, solve problems, and spend more time on the creative and UX-focused parts of building products.
 
-### 1. Install Dependencies
-```bash
-npm install
-```
+### ✨ What I care about
 
-### 2. Start Development Server
-```bash
-npm run dev
-```
-Open [http://localhost:5173](http://localhost:5173) in your browser.
+**Clean code · Great UX · Pixel precision · Continuous learning**
 
-### 3. Production Build
-```bash
-npm run build
-```
-The static production bundle is generated inside the `dist/` directory.
-
-### 4. Preview Production Build Locally
-```bash
-npm run preview
-```
+I'm always interested in building useful things, learning new technologies, and collaborating with people who care about the details.
 
 ---
 
-## 🌐 GitHub Pages Deployment Instructions
-
-This project is pre-configured for seamless automated deployment to GitHub Pages via GitHub Actions.
-
-### Step 1: Push Code to GitHub
-1. Initialize/commit the project:
-   ```bash
-   git add .
-   git commit -m "feat: complete Vanessa Pacheco portfolio matching design"
-   ```
-2. Link to your GitHub repository and push to the `main` branch:
-   ```bash
-   git remote add origin https://github.com/vanpacheco/vpacheco.git
-   git branch -M main
-   git push -u origin main
-   ```
-
-### Step 2: Enable GitHub Pages in Repository Settings
-1. On GitHub, navigate to your repository **Settings** → **Pages** (in the left sidebar).
-2. Under **Build and deployment**:
-   - **Source**: Select **GitHub Actions**.
-3. Every time you push changes to `main`, the included workflow in `.github/workflows/deploy.yml` will automatically build the site and deploy it to GitHub Pages.
-
----
-
-## 📄 License
-MIT © Vanessa Pacheco
+📍 Colombia · 🌎 Remote
