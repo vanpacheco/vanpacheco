@@ -206,9 +206,9 @@ export default function App() {
                   <div className="text-[12px] text-slate-500 mt-0.5">Computer Engineer · ES / EN</div>
                 </div>
 
-                <div className="bg-[#DCFCE7] text-[#15803D] border border-[#86EFAC]/60 text-[11px] font-semibold px-3 py-1 rounded-full inline-flex items-center gap-1">
+                {/* <div className="bg-[#DCFCE7] text-[#15803D] border border-[#86EFAC]/60 text-[11px] font-semibold px-3 py-1 rounded-full inline-flex items-center gap-1">
                   <span>Open to work</span>
-                </div>
+                </div> */}
               </div>
             </div>
           </div>
