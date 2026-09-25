@@ -4,7 +4,6 @@ import {
   ArrowRight,
   ArrowDown,
   Mail,
-  MapPin,
   X,
   Check,
   Copy,
@@ -531,8 +530,7 @@ export default function App() {
           FOOTER
           ========================================================================= */}
       <footer className="max-w-[1120px] mx-auto py-8 px-4 sm:px-6 flex flex-col sm:flex-row items-center justify-between text-[11px] text-slate-500 gap-2 border-t border-slate-300/40">
-        <div>© 2025 Vanessa Pacheco</div>
-        <div>Designed and built with care • Remote, Colombia</div>
+        <div>© {new Date().getFullYear()} Vanessa Pacheco</div>
       </footer>
 
       {/* =========================================================================
