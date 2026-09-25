@@ -3,7 +3,6 @@ import {
   ArrowUpRight,
   ArrowRight,
   Mail,
-  MapPin,
   X,
   Check,
   Copy,

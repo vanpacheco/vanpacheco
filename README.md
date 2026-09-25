@@ -57,7 +57,7 @@ This project is pre-configured for seamless automated deployment to GitHub Pages
    ```
 2. Link to your GitHub repository and push to the `main` branch:
    ```bash
-   git remote add origin https://github.com/vanpacheco/portfolio.git
+   git remote add origin https://github.com/vanpacheco/vpacheco.git
    git branch -M main
    git push -u origin main
    ```
